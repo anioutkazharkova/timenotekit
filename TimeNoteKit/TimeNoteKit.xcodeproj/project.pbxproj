@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D02E943283C0193006F1A42 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E942283C0193006F1A42 /* LocationManager.swift */; };
+		1D02E944283C0193006F1A42 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E942283C0193006F1A42 /* LocationManager.swift */; };
+		1D02E946283C026F006F1A42 /* MapSnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E945283C026F006F1A42 /* MapSnapshotView.swift */; };
+		1D02E947283C026F006F1A42 /* MapSnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E945283C026F006F1A42 /* MapSnapshotView.swift */; };
+		1D02E949283C03BD006F1A42 /* PathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E948283C03BD006F1A42 /* PathManager.swift */; };
+		1D02E94A283C03BD006F1A42 /* PathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E948283C03BD006F1A42 /* PathManager.swift */; };
+		1D02E94C283C04B0006F1A42 /* MapTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E94B283C04B0006F1A42 /* MapTimelineProvider.swift */; };
+		1D02E94D283C04B0006F1A42 /* MapTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E94B283C04B0006F1A42 /* MapTimelineProvider.swift */; };
+		1D6D7AC8283A67AE00247D63 /* TimeNoteKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AC7283A67AE00247D63 /* TimeNoteKitApp.swift */; };
+		1D6D7ACA283A67AE00247D63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AC9283A67AE00247D63 /* ContentView.swift */; };
+		1D6D7ACC283A67B100247D63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D6D7ACB283A67B100247D63 /* Assets.xcassets */; };
+		1D6D7ACF283A67B100247D63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D6D7ACE283A67B100247D63 /* Preview Assets.xcassets */; };
+		1D6D7AD6283A686F00247D63 /* TickText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AD5283A686F00247D63 /* TickText.swift */; };
+		1D6D7AD8283A689700247D63 /* Ticks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AD7283A689700247D63 /* Ticks.swift */; };
+		1D6D7ADA283A68BD00247D63 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AD9283A68BD00247D63 /* ClockView.swift */; };
+		1D6D7ADC283A696E00247D63 /* Hands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7ADB283A696E00247D63 /* Hands.swift */; };
+		1D6D7ADE283A698700247D63 /* TickHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7ADD283A698700247D63 /* TickHands.swift */; };
+		1D6D7AE6283A723200247D63 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6D7AE5283A723200247D63 /* WidgetKit.framework */; };
+		1D6D7AE8283A723200247D63 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6D7AE7283A723200247D63 /* SwiftUI.framework */; };
+		1D6D7AEB283A723200247D63 /* ClockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AEA283A723200247D63 /* ClockWidget.swift */; };
+		1D6D7AEE283A723500247D63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D6D7AED283A723500247D63 /* Assets.xcassets */; };
+		1D6D7AF4283A723500247D63 /* ClockWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1D6D7AE3283A723200247D63 /* ClockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1D6D7AFD283A748700247D63 /* ClockTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AF9283A731200247D63 /* ClockTimelineProvider.swift */; };
+		1D6D7AFE283A748900247D63 /* ClockWidgetSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AFB283A73C200247D63 /* ClockWidgetSwiftUI.swift */; };
+		1D6D7AFF283A74A800247D63 /* TickHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7ADD283A698700247D63 /* TickHands.swift */; };
+		1D6D7B00283A74A800247D63 /* Ticks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AD7283A689700247D63 /* Ticks.swift */; };
+		1D6D7B01283A74A800247D63 /* Hands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7ADB283A696E00247D63 /* Hands.swift */; };
+		1D6D7B02283A74A800247D63 /* TickText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AD5283A686F00247D63 /* TickText.swift */; };
+		1D6D7B03283A74A800247D63 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AD9283A68BD00247D63 /* ClockView.swift */; };
+		1D6D7B06283A75FF00247D63 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7B05283A75FF00247D63 /* WidgetBundle.swift */; };
+		1D6D7B09283A8DCC00247D63 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7B08283A8DCC00247D63 /* CalendarView.swift */; };
+		1D6D7B0B283A959100247D63 /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7B0A283A959100247D63 /* MonthCalendarView.swift */; };
+		1D6D7B0D283A95D800247D63 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7B0C283A95D800247D63 /* DayView.swift */; };
+		1D8D32C3283AA230007B6762 /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7B0A283A959100247D63 /* MonthCalendarView.swift */; };
+		1D8D32C5283AA237007B6762 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7B0C283A95D800247D63 /* DayView.swift */; };
+		1D8D32C6283AA2D7007B6762 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7B08283A8DCC00247D63 /* CalendarView.swift */; };
+		1D8D32FC283AC4F3007B6762 /* ThemeIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D32FA283AC4F3007B6762 /* ThemeIntent.intentdefinition */; };
+		1D8D3302283AC5B1007B6762 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8D32D3283ABD07007B6762 /* Intents.framework */; };
+		1D8D3305283AC5B1007B6762 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D3304283AC5B1007B6762 /* IntentHandler.swift */; };
+		1D8D3309283AC5B1007B6762 /* ChangeThemeIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1D8D3301283AC5B1007B6762 /* ChangeThemeIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1D8D330D283AC5D0007B6762 /* ThemeIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D32FA283AC4F3007B6762 /* ThemeIntent.intentdefinition */; };
+		1D8D330F283AC69B007B6762 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D330E283AC69B007B6762 /* Theme.swift */; };
+		1D8D3310283AC69B007B6762 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D330E283AC69B007B6762 /* Theme.swift */; };
+		1D8D3311283AC6C0007B6762 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D330E283AC69B007B6762 /* Theme.swift */; };
+		1D8D3313283AC728007B6762 /* ThemeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D3312283AC728007B6762 /* ThemeExtension.swift */; };
+		1D8D3314283AC728007B6762 /* ThemeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D3312283AC728007B6762 /* ThemeExtension.swift */; };
+		1D8D3318283ACBC4007B6762 /* ThemeColorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D3315283ACAA5007B6762 /* ThemeColorItem.swift */; };
+		1D8D3319283ACBC4007B6762 /* ThemeColorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D3315283ACAA5007B6762 /* ThemeColorItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D6D7AF2283A723500247D63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D6D7ABC283A67AE00247D63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D6D7AE2283A723200247D63;
+			remoteInfo = ClockWidgetExtension;
+		};
+		1D8D3307283AC5B1007B6762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D6D7ABC283A67AE00247D63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D8D3300283AC5B1007B6762;
+			remoteInfo = ChangeThemeIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D6D7AF8283A723500247D63 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1D8D3309283AC5B1007B6762 /* ChangeThemeIntent.appex in Embed App Extensions */,
+				1D6D7AF4283A723500247D63 /* ClockWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D02E942283C0193006F1A42 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		1D02E945283C026F006F1A42 /* MapSnapshotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSnapshotView.swift; sourceTree = "<group>"; };
+		1D02E948283C03BD006F1A42 /* PathManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathManager.swift; sourceTree = "<group>"; };
+		1D02E94B283C04B0006F1A42 /* MapTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTimelineProvider.swift; sourceTree = "<group>"; };
+		1D6D7AC4283A67AE00247D63 /* TimeNoteKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeNoteKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6D7AC7283A67AE00247D63 /* TimeNoteKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNoteKitApp.swift; sourceTree = "<group>"; };
+		1D6D7AC9283A67AE00247D63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1D6D7ACB283A67B100247D63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D6D7ACE283A67B100247D63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D6D7AD5283A686F00247D63 /* TickText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickText.swift; sourceTree = "<group>"; };
+		1D6D7AD7283A689700247D63 /* Ticks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticks.swift; sourceTree = "<group>"; };
+		1D6D7AD9283A68BD00247D63 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		1D6D7ADB283A696E00247D63 /* Hands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hands.swift; sourceTree = "<group>"; };
+		1D6D7ADD283A698700247D63 /* TickHands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickHands.swift; sourceTree = "<group>"; };
+		1D6D7AE3283A723200247D63 /* ClockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6D7AE5283A723200247D63 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1D6D7AE7283A723200247D63 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1D6D7AEA283A723200247D63 /* ClockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockWidget.swift; sourceTree = "<group>"; };
+		1D6D7AED283A723500247D63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D6D7AEF283A723500247D63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D6D7AF9283A731200247D63 /* ClockTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTimelineProvider.swift; sourceTree = "<group>"; };
+		1D6D7AFB283A73C200247D63 /* ClockWidgetSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockWidgetSwiftUI.swift; sourceTree = "<group>"; };
+		1D6D7B05283A75FF00247D63 /* WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
+		1D6D7B08283A8DCC00247D63 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		1D6D7B0A283A959100247D63 /* MonthCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCalendarView.swift; sourceTree = "<group>"; };
+		1D6D7B0C283A95D800247D63 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		1D8D32CD283ABC34007B6762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1D8D32D3283ABD07007B6762 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		1D8D32DE283ABD07007B6762 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		1D8D32FA283AC4F3007B6762 /* ThemeIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ThemeIntent.intentdefinition; sourceTree = "<group>"; };
+		1D8D3301283AC5B1007B6762 /* ChangeThemeIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChangeThemeIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D8D3304283AC5B1007B6762 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		1D8D3306283AC5B1007B6762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D8D330E283AC69B007B6762 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1D8D3312283AC728007B6762 /* ThemeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeExtension.swift; sourceTree = "<group>"; };
+		1D8D3315283ACAA5007B6762 /* ThemeColorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D6D7AC1283A67AE00247D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D6D7AE0283A723200247D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D6D7AE8283A723200247D63 /* SwiftUI.framework in Frameworks */,
+				1D6D7AE6283A723200247D63 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D8D32FE283AC5B1007B6762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D8D3302283AC5B1007B6762 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D02E941283C0184006F1A42 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				1D02E942283C0193006F1A42 /* LocationManager.swift */,
+				1D02E945283C026F006F1A42 /* MapSnapshotView.swift */,
+				1D02E948283C03BD006F1A42 /* PathManager.swift */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		1D6D7ABB283A67AE00247D63 = {
+			isa = PBXGroup;
+			children = (
+				1D6D7AC6283A67AE00247D63 /* TimeNoteKit */,
+				1D6D7AE9283A723200247D63 /* ClockWidget */,
+				1D8D3303283AC5B1007B6762 /* ChangeThemeIntent */,
+				1D6D7AE4283A723200247D63 /* Frameworks */,
+				1D6D7AC5283A67AE00247D63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D6D7AC5283A67AE00247D63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6D7AC4283A67AE00247D63 /* TimeNoteKit.app */,
+				1D6D7AE3283A723200247D63 /* ClockWidgetExtension.appex */,
+				1D8D3301283AC5B1007B6762 /* ChangeThemeIntent.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D6D7AC6283A67AE00247D63 /* TimeNoteKit */ = {
+			isa = PBXGroup;
+			children = (
+				1D02E941283C0184006F1A42 /* location */,
+				1D8D32CD283ABC34007B6762 /* Info.plist */,
+				1D6D7B07283A8DC000247D63 /* calendar */,
+				1D6D7ADD283A698700247D63 /* TickHands.swift */,
+				1D6D7ADB283A696E00247D63 /* Hands.swift */,
+				1D6D7AD7283A689700247D63 /* Ticks.swift */,
+				1D6D7AD9283A68BD00247D63 /* ClockView.swift */,
+				1D6D7AD5283A686F00247D63 /* TickText.swift */,
+				1D6D7AC7283A67AE00247D63 /* TimeNoteKitApp.swift */,
+				1D6D7AC9283A67AE00247D63 /* ContentView.swift */,
+				1D6D7ACB283A67B100247D63 /* Assets.xcassets */,
+				1D6D7ACD283A67B100247D63 /* Preview Content */,
+				1D8D32FA283AC4F3007B6762 /* ThemeIntent.intentdefinition */,
+				1D8D330E283AC69B007B6762 /* Theme.swift */,
+				1D8D3312283AC728007B6762 /* ThemeExtension.swift */,
+			);
+			path = TimeNoteKit;
+			sourceTree = "<group>";
+		};
+		1D6D7ACD283A67B100247D63 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1D6D7ACE283A67B100247D63 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1D6D7AE4283A723200247D63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D6D7AE5283A723200247D63 /* WidgetKit.framework */,
+				1D6D7AE7283A723200247D63 /* SwiftUI.framework */,
+				1D8D32D3283ABD07007B6762 /* Intents.framework */,
+				1D8D32DE283ABD07007B6762 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D6D7AE9283A723200247D63 /* ClockWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1D6D7AEA283A723200247D63 /* ClockWidget.swift */,
+				1D6D7AED283A723500247D63 /* Assets.xcassets */,
+				1D6D7AEF283A723500247D63 /* Info.plist */,
+				1D6D7AF9283A731200247D63 /* ClockTimelineProvider.swift */,
+				1D6D7AFB283A73C200247D63 /* ClockWidgetSwiftUI.swift */,
+				1D6D7B05283A75FF00247D63 /* WidgetBundle.swift */,
+				1D8D3315283ACAA5007B6762 /* ThemeColorItem.swift */,
+				1D02E94B283C04B0006F1A42 /* MapTimelineProvider.swift */,
+			);
+			path = ClockWidget;
+			sourceTree = "<group>";
+		};
+		1D6D7B07283A8DC000247D63 /* calendar */ = {
+			isa = PBXGroup;
+			children = (
+				1D6D7B08283A8DCC00247D63 /* CalendarView.swift */,
+				1D6D7B0A283A959100247D63 /* MonthCalendarView.swift */,
+				1D6D7B0C283A95D800247D63 /* DayView.swift */,
+			);
+			path = calendar;
+			sourceTree = "<group>";
+		};
+		1D8D3303283AC5B1007B6762 /* ChangeThemeIntent */ = {
+			isa = PBXGroup;
+			children = (
+				1D8D3304283AC5B1007B6762 /* IntentHandler.swift */,
+				1D8D3306283AC5B1007B6762 /* Info.plist */,
+			);
+			path = ChangeThemeIntent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6D7AC3283A67AE00247D63 /* TimeNoteKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6D7AD2283A67B100247D63 /* Build configuration list for PBXNativeTarget "TimeNoteKit" */;
+			buildPhases = (
+				1D6D7AC0283A67AE00247D63 /* Sources */,
+				1D6D7AC1283A67AE00247D63 /* Frameworks */,
+				1D6D7AC2283A67AE00247D63 /* Resources */,
+				1D6D7AF8283A723500247D63 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D6D7AF3283A723500247D63 /* PBXTargetDependency */,
+				1D8D3308283AC5B1007B6762 /* PBXTargetDependency */,
+			);
+			name = TimeNoteKit;
+			productName = TimeNoteKit;
+			productReference = 1D6D7AC4283A67AE00247D63 /* TimeNoteKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D6D7AE2283A723200247D63 /* ClockWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6D7AF5283A723500247D63 /* Build configuration list for PBXNativeTarget "ClockWidgetExtension" */;
+			buildPhases = (
+				1D6D7ADF283A723200247D63 /* Sources */,
+				1D6D7AE0283A723200247D63 /* Frameworks */,
+				1D6D7AE1283A723200247D63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClockWidgetExtension;
+			productName = ClockWidgetExtension;
+			productReference = 1D6D7AE3283A723200247D63 /* ClockWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1D8D3300283AC5B1007B6762 /* ChangeThemeIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D8D330A283AC5B1007B6762 /* Build configuration list for PBXNativeTarget "ChangeThemeIntent" */;
+			buildPhases = (
+				1D8D32FD283AC5B1007B6762 /* Sources */,
+				1D8D32FE283AC5B1007B6762 /* Frameworks */,
+				1D8D32FF283AC5B1007B6762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChangeThemeIntent;
+			productName = ChangeThemeIntent;
+			productReference = 1D8D3301283AC5B1007B6762 /* ChangeThemeIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D6D7ABC283A67AE00247D63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					1D6D7AC3283A67AE00247D63 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					1D6D7AE2283A723200247D63 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					1D8D3300283AC5B1007B6762 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 1D6D7ABF283A67AE00247D63 /* Build configuration list for PBXProject "TimeNoteKit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D6D7ABB283A67AE00247D63;
+			productRefGroup = 1D6D7AC5283A67AE00247D63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6D7AC3283A67AE00247D63 /* TimeNoteKit */,
+				1D6D7AE2283A723200247D63 /* ClockWidgetExtension */,
+				1D8D3300283AC5B1007B6762 /* ChangeThemeIntent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D6D7AC2283A67AE00247D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D6D7ACF283A67B100247D63 /* Preview Assets.xcassets in Resources */,
+				1D6D7ACC283A67B100247D63 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D6D7AE1283A723200247D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D6D7AEE283A723500247D63 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D8D32FF283AC5B1007B6762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D6D7AC0283A67AE00247D63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D02E949283C03BD006F1A42 /* PathManager.swift in Sources */,
+				1D6D7ADE283A698700247D63 /* TickHands.swift in Sources */,
+				1D6D7B0D283A95D800247D63 /* DayView.swift in Sources */,
+				1D6D7B0B283A959100247D63 /* MonthCalendarView.swift in Sources */,
+				1D6D7AD8283A689700247D63 /* Ticks.swift in Sources */,
+				1D6D7B09283A8DCC00247D63 /* CalendarView.swift in Sources */,
+				1D6D7ADA283A68BD00247D63 /* ClockView.swift in Sources */,
+				1D6D7AD6283A686F00247D63 /* TickText.swift in Sources */,
+				1D6D7ACA283A67AE00247D63 /* ContentView.swift in Sources */,
+				1D02E943283C0193006F1A42 /* LocationManager.swift in Sources */,
+				1D8D330F283AC69B007B6762 /* Theme.swift in Sources */,
+				1D02E94C283C04B0006F1A42 /* MapTimelineProvider.swift in Sources */,
+				1D6D7ADC283A696E00247D63 /* Hands.swift in Sources */,
+				1D6D7AC8283A67AE00247D63 /* TimeNoteKitApp.swift in Sources */,
+				1D02E946283C026F006F1A42 /* MapSnapshotView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D6D7ADF283A723200247D63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D8D3318283ACBC4007B6762 /* ThemeColorItem.swift in Sources */,
+				1D02E944283C0193006F1A42 /* LocationManager.swift in Sources */,
+				1D6D7B06283A75FF00247D63 /* WidgetBundle.swift in Sources */,
+				1D8D32C5283AA237007B6762 /* DayView.swift in Sources */,
+				1D8D3313283AC728007B6762 /* ThemeExtension.swift in Sources */,
+				1D8D32C6283AA2D7007B6762 /* CalendarView.swift in Sources */,
+				1D6D7AFD283A748700247D63 /* ClockTimelineProvider.swift in Sources */,
+				1D02E947283C026F006F1A42 /* MapSnapshotView.swift in Sources */,
+				1D6D7B02283A74A800247D63 /* TickText.swift in Sources */,
+				1D8D32C3283AA230007B6762 /* MonthCalendarView.swift in Sources */,
+				1D6D7AFF283A74A800247D63 /* TickHands.swift in Sources */,
+				1D6D7B01283A74A800247D63 /* Hands.swift in Sources */,
+				1D6D7B00283A74A800247D63 /* Ticks.swift in Sources */,
+				1D6D7AEB283A723200247D63 /* ClockWidget.swift in Sources */,
+				1D8D32FC283AC4F3007B6762 /* ThemeIntent.intentdefinition in Sources */,
+				1D6D7AFE283A748900247D63 /* ClockWidgetSwiftUI.swift in Sources */,
+				1D02E94D283C04B0006F1A42 /* MapTimelineProvider.swift in Sources */,
+				1D02E94A283C03BD006F1A42 /* PathManager.swift in Sources */,
+				1D6D7B03283A74A800247D63 /* ClockView.swift in Sources */,
+				1D8D3310283AC69B007B6762 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D8D32FD283AC5B1007B6762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D8D3311283AC6C0007B6762 /* Theme.swift in Sources */,
+				1D8D3319283ACBC4007B6762 /* ThemeColorItem.swift in Sources */,
+				1D8D330D283AC5D0007B6762 /* ThemeIntent.intentdefinition in Sources */,
+				1D8D3305283AC5B1007B6762 /* IntentHandler.swift in Sources */,
+				1D8D3314283AC728007B6762 /* ThemeExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D6D7AF3283A723500247D63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D6D7AE2283A723200247D63 /* ClockWidgetExtension */;
+			targetProxy = 1D6D7AF2283A723500247D63 /* PBXContainerItemProxy */;
+		};
+		1D8D3308283AC5B1007B6762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D8D3300283AC5B1007B6762 /* ChangeThemeIntent */;
+			targetProxy = 1D8D3307283AC5B1007B6762 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6D7AD0283A67B100247D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D6D7AD1283A67B100247D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D6D7AD3283A67B100247D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeNoteKit/Preview Content\"";
+				DEVELOPMENT_TEAM = 7848QT82M4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeNoteKit/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Дайте разрешение на доступ к местоположению";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Дайте разрешение на доступ к местоположению";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Дайте разрешение на доступ к местоположению";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Дайте разрешение на доступ к местоположению";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azharkova.TimeNoteKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6D7AD4283A67B100247D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeNoteKit/Preview Content\"";
+				DEVELOPMENT_TEAM = 7848QT82M4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeNoteKit/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Дайте разрешение на доступ к местоположению";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Дайте разрешение на доступ к местоположению";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Дайте разрешение на доступ к местоположению";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Дайте разрешение на доступ к местоположению";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azharkova.TimeNoteKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1D6D7AF6283A723500247D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7848QT82M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClockWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azharkova.TimeNoteKit.ClockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6D7AF7283A723500247D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7848QT82M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClockWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azharkova.TimeNoteKit.ClockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1D8D330B283AC5B1007B6762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7848QT82M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChangeThemeIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ChangeThemeIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azharkova.TimeNoteKit.ChangeThemeIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D8D330C283AC5B1007B6762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7848QT82M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChangeThemeIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ChangeThemeIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azharkova.TimeNoteKit.ChangeThemeIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6D7ABF283A67AE00247D63 /* Build configuration list for PBXProject "TimeNoteKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6D7AD0283A67B100247D63 /* Debug */,
+				1D6D7AD1283A67B100247D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D6D7AD2283A67B100247D63 /* Build configuration list for PBXNativeTarget "TimeNoteKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6D7AD3283A67B100247D63 /* Debug */,
+				1D6D7AD4283A67B100247D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D6D7AF5283A723500247D63 /* Build configuration list for PBXNativeTarget "ClockWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6D7AF6283A723500247D63 /* Debug */,
+				1D6D7AF7283A723500247D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D8D330A283AC5B1007B6762 /* Build configuration list for PBXNativeTarget "ChangeThemeIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D8D330B283AC5B1007B6762 /* Debug */,
+				1D8D330C283AC5B1007B6762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D6D7ABC283A67AE00247D63 /* Project object */;
+}
