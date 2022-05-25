@@ -14,8 +14,10 @@ struct MapWidgetSwift : View {
     var entry: MapTimelineProvider.Entry
     
     var body: some View {
-        VStack {
-            MapSnapshotView(location: entry.location)
+        GeometryReader { geometry in
+            
+            MapSnapshotView(location: entry.location).frame(width: geometry.size.width, height: geometry.size.height)
+            
         }
     }
 }

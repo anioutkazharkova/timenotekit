@@ -30,9 +30,15 @@ struct MapTimelineProvider: TimelineProvider {
     }
     
     func getTimeline( in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        PathManager.shared.start()
-        
-        completion(Timeline(entries: [MapEntry(date: Date(), location: PathManager.shared.currentLocation ?? Location(latitude: 0, longitude: 0))], policy: .atEnd))
+        print("start timeline")
+        let date = Date()
+        let nextUpdate = Calendar.current.date(byAdding: .minute, value: 10, to: date)!
+        WidgetLocationManager.shared.fetchLocation { location in
+            print(location)
+            completion(Timeline(entries: [MapEntry(date: date, location: Location(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude))], policy: .after(nextUpdate)))
+            WidgetCenter.shared.reloadTimelines(ofKind: "Map")
+        }
+       
         //completion(Timeline(entries: [Entry(date: current)], policy: .after(refreshDate)))
         //WidgetCenter.shared.reloadAllTimelines()//.reloadTimelines(ofKind: "Clock")
        

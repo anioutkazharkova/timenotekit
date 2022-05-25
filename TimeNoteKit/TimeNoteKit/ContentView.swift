@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    init() {
+      let wm =   WidgetLocationManager.shared
+    }
     var body: some View {
         GeometryReader { geometry in
             let size = (geometry.size.width - 50)/7
@@ -17,7 +19,7 @@ struct ContentView: View {
         ClockView().frame(width: 300, height: 300)
         
             MainCalendarView(size: size, fontSize: size/3)
-            MapSnapshotView(location: Location(latitude: 30, longitude: 50)).frame(height: 500)
+            MapSnapshotView(location: Location(latitude: 30, longitude: 50)).frame(width: 300, height: 300)
         }
         }
         }

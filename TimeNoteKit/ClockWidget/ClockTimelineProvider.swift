@@ -53,6 +53,7 @@ struct ClockTimelineProvider: IntentTimelineProvider {
             WidgetCenter.shared.reloadTimelines(ofKind: "Clock")
             WidgetCenter.shared.reloadTimelines(ofKind: "ClockCalendar")
             WidgetCenter.shared.reloadTimelines(ofKind: "Calendar")
+        //    WidgetCenter.shared.reloadTimelines(ofKind: "Map")
         }
         //completion(Timeline(entries: [Entry(date: current)], policy: .after(refreshDate)))
         //WidgetCenter.shared.reloadAllTimelines()//.reloadTimelines(ofKind: "Clock")

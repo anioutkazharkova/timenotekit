@@ -22,7 +22,7 @@ struct MapWidget : Widget {
         }
         .configurationDisplayName("Map widget")
         .description("This is an example widget.")
-        .supportedFamilies([.systemLarge, .systemExtraLarge])
+        .supportedFamilies([.systemLarge, .systemSmall])
     }
 }
 

@@ -20,21 +20,22 @@ struct MapSnapshotView: View {
   @State private var snapshotImage: UIImage? = nil
 
   var body: some View {
-      GeometryReader{ geometry in
-      Group {
+      GeometryReader {geometry in
+          VStack(alignment: .center) {
           if let image = snapshotImage {
-            Image(uiImage: image)
+              Image(uiImage: image).resizable().scaledToFit()
           } else {
-            ProgressView()
-            .progressViewStyle(CircularProgressViewStyle())
-            .background(Color(UIColor.secondarySystemBackground))
+              Color.red
           }
-        }
+          }
         .onAppear {
-            generateSnapshot(width: geometry.size.width, height: geometry.size.height)
+            MapHelper.shared.taskSnapshot(for: MapView(location: Location(latitude: location.latitude, longitude: location.longitude)).mapRegion, with: geometry.size) { image in
+                self.snapshotImage = image
+            }
+            //generateSnapshot(width: geometry.size.width, height: geometry.size.height)
         }
       }
-  }
+      }
     
     
     func generateSnapshot(width: CGFloat, height: CGFloat) {
@@ -52,7 +53,7 @@ struct MapSnapshotView: View {
       let mapOptions = MKMapSnapshotter.Options()
       mapOptions.region = region
       mapOptions.size = CGSize(width: width, height: height)
-      mapOptions.showsBuildings = true
+      //mapOptions.showsBuildings = true
 
       // Create the snapshotter and run it.
       let snapshotter = MKMapSnapshotter(options: mapOptions)

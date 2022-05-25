@@ -18,7 +18,10 @@ class PathManager: LocationListener {
     }
     
     
-    func start() {
+    func start(_ onUpdate: ((Location)->Void)? = nil) {
+        LocationManager.shared.onUpdate = { location in
+            onUpdate?(location)
+        }
         LocationManager.shared.request()
         LocationManager.shared.startUpdate()
     }

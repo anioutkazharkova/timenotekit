@@ -29,103 +29,35 @@ struct LocationWithAddress: Codable {
     var address: String
 }
 
-class LocationManager: NSObject, CLLocationManagerDelegate {
-    var locationManager: CLLocationManager
-    var currentLocation: Location?
-    private var isSetup: Bool = false
-
-    private var listeners: [LocationListener] = [LocationListener]()
-
-    var status: CLAuthorizationStatus {
-        return CLLocationManager.authorizationStatus()
-    }
-
-    static let shared = LocationManager()
-    override private init() {
-        self.locationManager = CLLocationManager()
-
-    }
-
-    func request() {
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.requestWhenInUseAuthorization()
-    }
-
-    func addDelegate(delegate: LocationListener) {
-        if (listeners.filter {$0.type == delegate.type}).first == nil {
-            listeners.append(delegate)
-            return
-        }
-    }
-
-    func removeDelegate(delegate: LocationListener) {
-        var index = -1
-        for i in 0..<listeners.count {
-            if listeners[i].type == delegate.type {
-                index = i
-                break
+class WidgetLocationManager: NSObject, CLLocationManagerDelegate {
+    lazy var locationManager: CLLocationManager = {
+       return CLLocationManager()
+    }()
+    
+    static let shared = WidgetLocationManager()
+    
+    private var handler: ((CLLocation) -> Void)?
+    override init() {
+        super.init()
+        self.locationManager.delegate = self
+    
+       // DispatchQueue.main.async {
+            if self.locationManager.authorizationStatus == .notDetermined {
+                self.locationManager.requestLocation()
+                self.locationManager.requestAlwaysAuthorization()
+                self.locationManager.requestWhenInUseAuthorization()
             }
-        }
-        listeners.remove(at: index)
+       // }
     }
-
-    func setupLocationManager() {
-        isSetup = true
-        self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.allowsBackgroundLocationUpdates = false
-        self.locationManager.activityType = .other
-        locationManager.distanceFilter = kCLDistanceFilterNone
-      //  self.locationManager.allowDeferredLocationUpdates(untilTraveled: CLLocationDistanceMax, timeout: CLTimeIntervalMax)
+    func fetchLocation(handler: @escaping (CLLocation) -> Void) {
+        self.handler = handler
+        self.locationManager.requestLocation()
     }
-
-    func startUpdate() {
-        self.setupLocationManager()
-        self.locationManager.delegate = self
-        self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.startUpdatingLocation()
-       // self.locationManager.startMonitoringSignificantLocationChanges()
-    }
-
-    func stopUpdate() {
-        self.locationManager.stopUpdatingLocation()
-        self.locationManager.delegate = nil
-    }
-
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let lastLocation = locations.last {
-            currentLocation = Location(latitude: lastLocation.coordinate.latitude, longitude: lastLocation.coordinate.longitude)
-            for delegate in listeners {
-                delegate.changedLocation(location: currentLocation!)
-            }
-           // stopUpdate()
-        }
+        self.handler!(locations.last!)
     }
-
-    func locationManager(_ manager: CLLocationManager, didFinishDeferredUpdatesWithError error: Error?) {
-        self.locationManager.startMonitoringSignificantLocationChanges()
-    }
-
+    
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-    }
-
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == CLAuthorizationStatus.authorizedAlways || status == CLAuthorizationStatus.authorizedWhenInUse{
-            startUpdate()
-        } else {
-            self.locationManager.requestAlwaysAuthorization()
-        }
-    }
-}
-
-protocol LocationListener: AnyObject {
-    func changedLocation(location: Location)
-
-}
-
-extension LocationListener {
-    var type: String {
-        return String(describing: self)
+        print(error)
     }
 }

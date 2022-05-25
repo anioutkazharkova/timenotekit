@@ -11,8 +11,6 @@
 		1D02E944283C0193006F1A42 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E942283C0193006F1A42 /* LocationManager.swift */; };
 		1D02E946283C026F006F1A42 /* MapSnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E945283C026F006F1A42 /* MapSnapshotView.swift */; };
 		1D02E947283C026F006F1A42 /* MapSnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E945283C026F006F1A42 /* MapSnapshotView.swift */; };
-		1D02E949283C03BD006F1A42 /* PathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E948283C03BD006F1A42 /* PathManager.swift */; };
-		1D02E94A283C03BD006F1A42 /* PathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E948283C03BD006F1A42 /* PathManager.swift */; };
 		1D02E94C283C04B0006F1A42 /* MapTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E94B283C04B0006F1A42 /* MapTimelineProvider.swift */; };
 		1D02E94D283C04B0006F1A42 /* MapTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02E94B283C04B0006F1A42 /* MapTimelineProvider.swift */; };
 		1D6D7AC8283A67AE00247D63 /* TimeNoteKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D7AC7283A67AE00247D63 /* TimeNoteKitApp.swift */; };
@@ -55,6 +53,10 @@
 		1D8D3314283AC728007B6762 /* ThemeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D3312283AC728007B6762 /* ThemeExtension.swift */; };
 		1D8D3318283ACBC4007B6762 /* ThemeColorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D3315283ACAA5007B6762 /* ThemeColorItem.swift */; };
 		1D8D3319283ACBC4007B6762 /* ThemeColorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D3315283ACAA5007B6762 /* ThemeColorItem.swift */; };
+		1DC1C74C283D515900CC8B4C /* MapView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC1C74B283D515900CC8B4C /* MapView+Util.swift */; };
+		1DC1C74D283D515900CC8B4C /* MapView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC1C74B283D515900CC8B4C /* MapView+Util.swift */; };
+		1DC1C74F283D522300CC8B4C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC1C74E283D522300CC8B4C /* MapView.swift */; };
+		1DC1C750283D522300CC8B4C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC1C74E283D522300CC8B4C /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +94,6 @@
 /* Begin PBXFileReference section */
 		1D02E942283C0193006F1A42 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		1D02E945283C026F006F1A42 /* MapSnapshotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSnapshotView.swift; sourceTree = "<group>"; };
-		1D02E948283C03BD006F1A42 /* PathManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathManager.swift; sourceTree = "<group>"; };
 		1D02E94B283C04B0006F1A42 /* MapTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTimelineProvider.swift; sourceTree = "<group>"; };
 		1D6D7AC4283A67AE00247D63 /* TimeNoteKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeNoteKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6D7AC7283A67AE00247D63 /* TimeNoteKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNoteKitApp.swift; sourceTree = "<group>"; };
@@ -126,6 +127,8 @@
 		1D8D330E283AC69B007B6762 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		1D8D3312283AC728007B6762 /* ThemeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeExtension.swift; sourceTree = "<group>"; };
 		1D8D3315283ACAA5007B6762 /* ThemeColorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorItem.swift; sourceTree = "<group>"; };
+		1DC1C74B283D515900CC8B4C /* MapView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapView+Util.swift"; sourceTree = "<group>"; };
+		1DC1C74E283D522300CC8B4C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +164,6 @@
 			children = (
 				1D02E942283C0193006F1A42 /* LocationManager.swift */,
 				1D02E945283C026F006F1A42 /* MapSnapshotView.swift */,
-				1D02E948283C03BD006F1A42 /* PathManager.swift */,
 			);
 			path = location;
 			sourceTree = "<group>";
@@ -205,6 +207,8 @@
 				1D8D32FA283AC4F3007B6762 /* ThemeIntent.intentdefinition */,
 				1D8D330E283AC69B007B6762 /* Theme.swift */,
 				1D8D3312283AC728007B6762 /* ThemeExtension.swift */,
+				1DC1C74B283D515900CC8B4C /* MapView+Util.swift */,
+				1DC1C74E283D522300CC8B4C /* MapView.swift */,
 			);
 			path = TimeNoteKit;
 			sourceTree = "<group>";
@@ -392,7 +396,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D02E949283C03BD006F1A42 /* PathManager.swift in Sources */,
 				1D6D7ADE283A698700247D63 /* TickHands.swift in Sources */,
 				1D6D7B0D283A95D800247D63 /* DayView.swift in Sources */,
 				1D6D7B0B283A959100247D63 /* MonthCalendarView.swift in Sources */,
@@ -401,12 +404,14 @@
 				1D6D7ADA283A68BD00247D63 /* ClockView.swift in Sources */,
 				1D6D7AD6283A686F00247D63 /* TickText.swift in Sources */,
 				1D6D7ACA283A67AE00247D63 /* ContentView.swift in Sources */,
+				1DC1C74F283D522300CC8B4C /* MapView.swift in Sources */,
 				1D02E943283C0193006F1A42 /* LocationManager.swift in Sources */,
 				1D8D330F283AC69B007B6762 /* Theme.swift in Sources */,
 				1D02E94C283C04B0006F1A42 /* MapTimelineProvider.swift in Sources */,
 				1D6D7ADC283A696E00247D63 /* Hands.swift in Sources */,
 				1D6D7AC8283A67AE00247D63 /* TimeNoteKitApp.swift in Sources */,
 				1D02E946283C026F006F1A42 /* MapSnapshotView.swift in Sources */,
+				1DC1C74C283D515900CC8B4C /* MapView+Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +422,7 @@
 				1D8D3318283ACBC4007B6762 /* ThemeColorItem.swift in Sources */,
 				1D02E944283C0193006F1A42 /* LocationManager.swift in Sources */,
 				1D6D7B06283A75FF00247D63 /* WidgetBundle.swift in Sources */,
+				1DC1C750283D522300CC8B4C /* MapView.swift in Sources */,
 				1D8D32C5283AA237007B6762 /* DayView.swift in Sources */,
 				1D8D3313283AC728007B6762 /* ThemeExtension.swift in Sources */,
 				1D8D32C6283AA2D7007B6762 /* CalendarView.swift in Sources */,
@@ -429,9 +435,9 @@
 				1D6D7B00283A74A800247D63 /* Ticks.swift in Sources */,
 				1D6D7AEB283A723200247D63 /* ClockWidget.swift in Sources */,
 				1D8D32FC283AC4F3007B6762 /* ThemeIntent.intentdefinition in Sources */,
+				1DC1C74D283D515900CC8B4C /* MapView+Util.swift in Sources */,
 				1D6D7AFE283A748900247D63 /* ClockWidgetSwiftUI.swift in Sources */,
 				1D02E94D283C04B0006F1A42 /* MapTimelineProvider.swift in Sources */,
-				1D02E94A283C03BD006F1A42 /* PathManager.swift in Sources */,
 				1D6D7B03283A74A800247D63 /* ClockView.swift in Sources */,
 				1D8D3310283AC69B007B6762 /* Theme.swift in Sources */,
 			);
@@ -515,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -569,7 +575,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -595,7 +601,7 @@
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Дайте разрешение на доступ к местоположению";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Дайте разрешение на доступ к местоположению";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Дайте разрешение на доступ к местоположению";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Дайте разрешение на доступ к местоположению";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Дайте разрешение";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -630,7 +636,7 @@
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Дайте разрешение на доступ к местоположению";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Дайте разрешение на доступ к местоположению";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Дайте разрешение на доступ к местоположению";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Дайте разрешение на доступ к местоположению";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Дайте разрешение";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -660,7 +666,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClockWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ClockWidget;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Need location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Need location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need location";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -687,7 +698,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClockWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ClockWidget;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Need location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Need location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need location";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
